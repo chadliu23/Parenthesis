@@ -13,24 +13,14 @@ public class TestParenthesis {
 		assertFalse(Parenthesis.isParenthesisMatch("(()"));
 		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-//	@Test
-//	public void testBracket(){
-//
-//		assertTrue(Parenthesis.isParenthesisMatch("({})"));
-//		assertTrue(Parenthesis.isParenthesisMatch("({})"));
-//
-//		assertFalse(Parenthesis.isParenthesisMatch("({}("));
-//		assertFalse(Parenthesis.isParenthesisMatch("){})"));
-//	}
+	// @Test
+	public void testBracket() {
+
+		assertTrue(Parenthesis.isParenthesisMatch("({})"));
+		assertTrue(Parenthesis.isParenthesisMatch("({})"));
+
+		assertFalse(Parenthesis.isParenthesisMatch("({}("));
+		assertFalse(Parenthesis.isParenthesisMatch("){})"));
+	}
 
 }
