@@ -62,7 +62,7 @@
     <description>Main target</description>
   </target>
 	
-  <target name="Test" depends="compile, junit">
+  <target name="test" depends="compile, junit">
     <description>for Test</description>
   </target>
 
