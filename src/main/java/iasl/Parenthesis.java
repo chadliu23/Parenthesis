@@ -3,7 +3,7 @@ package iasl;
 import java.util.Stack;
 
 public class Parenthesis {
-	public static boolean isParenthesisMatch(String str) {
+	public boolean isParenthesisMatch(String str) {
 	    Stack<Character> stack = new Stack<Character>();
 	    for(int i=0; i < str.length(); i++) {
 	    	switch(str.charAt(i))
@@ -13,10 +13,11 @@ public class Parenthesis {
 	    			break;
 	    		
 	    		case ')':
-	    			if(stack.empty() || stack.pop() != '(')
+	    			if(stack.empty() )
 	    			{
 	    				return false;
 	    			}
+	    			stack.pop();
 	    			break;
 
 	    	};		

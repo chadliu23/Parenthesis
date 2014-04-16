@@ -8,18 +8,19 @@ import org.junit.Test;
 public class TestParenthesis {
 	@Test
 	public void test() {
-		
-		assertTrue(Parenthesis.isParenthesisMatch("()"));
-		assertFalse(Parenthesis.isParenthesisMatch("(()"));
+		Parenthesis p = new Parenthesis();
+		assertTrue(p.isParenthesisMatch("()"));
+		assertFalse(p.isParenthesisMatch("(()"));
+		assertFalse(p.isParenthesisMatch(")"));
 		
 	}
 	// @Test
 	public void testBracket() {
+		Parenthesis p = new Parenthesis();
+		assertTrue(p.isParenthesisMatch("({})"));
+		assertTrue(p.isParenthesisMatch("({})"));
 
-		assertTrue(Parenthesis.isParenthesisMatch("({})"));
-		assertTrue(Parenthesis.isParenthesisMatch("({})"));
-
-		assertFalse(Parenthesis.isParenthesisMatch("({}("));
-		assertFalse(Parenthesis.isParenthesisMatch("){})"));
+		assertFalse(p.isParenthesisMatch("({}("));
+		assertFalse(p.isParenthesisMatch("){})"));
 	}
 }

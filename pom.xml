@@ -1,12 +1,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
  <properties>
-    <project.build.sourceEncoding>MS950</project.build.sourceEncoding>
+    <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
+    <maven.version>3.0</maven.version>
   </properties>
   <modelVersion>4.0.0</modelVersion>
   <groupId>iasl</groupId>
   <artifactId>Parenthesis</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>Parenthesis</name>
+  
+  <scm>
+		<connection>scm:git:git://github.com/chadliu23/parenthesis.git</connection>
+		<developerConnection>scm:git:git://github.com/chadliu23/parenthesis.git</developerConnection>
+		<url>https://github.com/chadliu23/parenthesis</url>
+	</scm>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -37,7 +44,6 @@
         <version>2.6</version>
         <configuration>
           <formats>
-            <format>html</format>
             <format>xml</format>
           </formats>
         </configuration>
