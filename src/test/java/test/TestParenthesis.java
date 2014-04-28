@@ -3,6 +3,7 @@ package test;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import iasl.Parenthesis;
+
 import org.junit.Test;
 
 public class TestParenthesis {
@@ -14,8 +15,8 @@ public class TestParenthesis {
 		assertFalse(p.isParenthesisMatch(")"));
 		
 	}
-	// @Test
-	public void testBracket() {
+	//@Test
+	public void testBracket(){
 		Parenthesis p = new Parenthesis();
 		assertTrue(p.isParenthesisMatch("({})"));
 		assertTrue(p.isParenthesisMatch("({})"));

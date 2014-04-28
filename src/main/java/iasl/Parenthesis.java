@@ -19,7 +19,8 @@ public class Parenthesis {
 	    			}
 	    			stack.pop();
 	    			break;
-
+	    		default:
+	    			return false;
 	    	};		
 	        
 	    }
