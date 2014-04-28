@@ -8,11 +8,11 @@
   <artifactId>Parenthesis</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>Parenthesis</name>
-  
+  <url>https://github.com/chadliu23/Parenthesis</url>
   <scm>
-		<connection>scm:git:git://github.com/chadliu23/parenthesis.git</connection>
-		<developerConnection>scm:git:git://github.com/chadliu23/parenthesis.git</developerConnection>
-		<url>https://github.com/chadliu23/parenthesis</url>
+		<connection>scm:git:git://github.com/chadliu23/Parenthesis.git</connection>
+		<developerConnection>scm:git:git://github.com/chadliu23/Parenthesis.git</developerConnection>
+		<url>https://github.com/chadliu23/Parenthesis</url>
 	</scm>
   <dependencies>
     <dependency>
@@ -40,9 +40,6 @@
 			<version>2.2.0</version>
 			<configuration>
         <format>xml</format>
-        <maxmem>256m</maxmem>
-        <!-- aggregated reports for multi-module projects -->
-        <aggregate>true</aggregate>
     </configuration>
 		</plugin>
 	</plugins>
