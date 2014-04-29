@@ -21,7 +21,10 @@ public class TestParenthesis {
 		Parenthesis p = new Parenthesis();
 		assertTrue(p.isParenthesisMatch("({})"));
 		assertTrue(p.isParenthesisMatch("({})"));
-
+		
+		assertFalse(p.isParenthesisMatch("{)"));
+		assertFalse(p.isParenthesisMatch("}"));
+		assertFalse(p.isParenthesisMatch("(}"));
 		assertFalse(p.isParenthesisMatch("({}("));
 		assertFalse(p.isParenthesisMatch("){})"));
 	}
