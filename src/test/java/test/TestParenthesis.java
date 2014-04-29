@@ -16,7 +16,7 @@ public class TestParenthesis {
 		assertFalse(p.isParenthesisMatch("]"));
 		
 	}
-	//@Test
+	@Test
 	public void testBracket(){
 		Parenthesis p = new Parenthesis();
 		assertTrue(p.isParenthesisMatch("({})"));

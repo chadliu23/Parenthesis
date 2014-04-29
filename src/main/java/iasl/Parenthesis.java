@@ -17,7 +17,23 @@ public class Parenthesis {
 	    			{
 	    				return false;
 	    			}
-	    			stack.pop();
+	    			if (stack.pop() != '(')
+	    			{
+	    				return false;
+	    			}
+	    			break;
+	    		case '{':
+	    			stack.push(str.charAt(i));
+	    			break;
+	    		case '}':
+	    			if(stack.empty() )
+	    			{
+	    				return false;
+	    			}
+	    			if (stack.pop() != '{')
+	    			{
+	    				return false;
+	    			}
 	    			break;
 	    		default:
 	    			return false;
