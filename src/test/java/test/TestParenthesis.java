@@ -13,6 +13,7 @@ public class TestParenthesis {
 		assertTrue(p.isParenthesisMatch("()"));
 		assertFalse(p.isParenthesisMatch("(()"));
 		assertFalse(p.isParenthesisMatch(")"));
+		assertFalse(p.isParenthesisMatch("]"));
 		
 	}
 	//@Test
